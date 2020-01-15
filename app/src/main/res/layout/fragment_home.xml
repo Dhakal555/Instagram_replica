@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragments.HomeFragment"
+    android:background="#f0f0f0">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?android:attr/windowBackground">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbar_top"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?android:attr/windowBackground">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingRight="8dp">
+
+                <ImageView
+                    android:id="@+id/insta_cam_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="2dp"
+                    android:src="@drawable/imageedit"
+                    />
+
+                <ImageView
+                    android:id="@+id/insta_homepage_logo"
+                    android:layout_width="180dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/insta"
+                    android:layout_alignLeft="@+id/insta_cam_icon"/>
+
+                <ImageView
+                    android:id="@+id/insta_message_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginRight="2dp"
+                    android:src="@drawable/instamessage"
+                    android:layout_alignParentEnd="true"/>
+
+                <ImageView
+                    android:id="@+id/insta_tv_icon"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_alignRight="@+id/insta_message_icon"
+                    android:layout_marginRight="46dp"
+                    android:src="@drawable/instatv" />
+
+            </RelativeLayout>
+
+        </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+<!--    <androidx.viewpager.widget.ViewPager-->
+<!--        android:id="@+id/insta_story"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="100dp"-->
+<!--        android:layout_below="@+id/top_bar"/>-->
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/sp_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top_bar"
+        android:background="@color/colorWhite"
+        android:outlineAmbientShadowColor="@color/colorBlack">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/insta_recyclerview_stories"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="5dp"
+                android:layout_below="@+id/top_bar"/>
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="4dp"
+                android:background="#f0f0f0"
+                app:layout_constraintTop_toBottomOf="@+id/viewpager"
+                tools:layout_editor_absoluteX="0dp" />
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/insta_recyclerview"
+                android:layout_marginTop="2dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/top_bar"/>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</RelativeLayout>

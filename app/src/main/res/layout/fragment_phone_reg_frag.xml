@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#ffffff"
+    tools:context=".fragments.Phone_reg_frag">
+
+    <LinearLayout
+        android:id="@+id/phone_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#ffffff"
+        >
+
+        <EditText
+            android:id="@+id/et_reg_phone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_et"
+            android:hint="phone number"
+            android:inputType="phone"
+            android:layout_marginTop="5dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="You may receive SMS update for instagram and can opt and out at any time"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"/>
+
+        <Button
+            android:id="@+id/btnnextPhonereg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/customregbutton"/>
+
+    </LinearLayout>
+
+</FrameLayout>

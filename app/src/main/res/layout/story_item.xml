@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="70dp"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="10dp"
+    android:background="#ffffff">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/img_story"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:src="@drawable/user101"
+        android:padding="5dp"
+        android:layout_marginTop="5dp"
+        android:background="@drawable/storyoutred"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/imgstry_add"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:visibility="invisible"
+        android:background="@drawable/story_plus_bg"
+        android:layout_marginRight="2dp"
+        android:layout_marginBottom="2dp"
+        android:padding="5dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/story_plus"
+        app:layout_constraintBottom_toBottomOf="@+id/img_story"
+        app:layout_constraintEnd_toEndOf="@+id/img_story" />
+
+    <TextView
+        android:id="@+id/tvposted_by"
+        android:layout_width="85dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:fontFamily="sans-serif-light"
+        android:singleLine="true"
+        android:maxLength="15"
+        android:text="Your Story"
+        android:textAlignment="center"
+        android:textColor="#000"
+        android:textSize="13sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_story" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

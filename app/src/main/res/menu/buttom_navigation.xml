@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:title=""
+        android:id="@+id/nav_home_menu"
+        android:icon="@drawable/instahome"
+        />
+
+    <item
+        android:title=""
+        android:id="@+id/nav_search_menu"
+        android:icon="@drawable/instasearch"
+        />
+
+    <item
+        android:title=""
+        android:id="@+id/nav_add_menu"
+        android:icon="@drawable/instaadd"
+        />
+
+    <item
+        android:title=""
+        android:id="@+id/nav_fav_menu"
+        android:icon="@drawable/instalike"
+        />
+
+    <item
+        android:title=""
+        android:id="@+id/nav_avatar_menu"
+        android:icon="@drawable/instauser"
+        />
+</menu>
